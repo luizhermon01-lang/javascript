@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+
+<input id="idade" type="text" placeholder="Digite sua idade">
+<button id="concordo">sim, tenho essa idade</button>
+
+<script>
+let concordo = document.getElementById('concordo')
+let input = document.getElementById('idade')
+
+concordo.addEventListener('click', function() {
+  
+  let idade = Number(input.value)
+
+  if (idade < 18){
+    alert('Você não é maior de idade')
+  } else {
+    alert('Você é maior de idade')
+    input.value = '' // Limpa o campo
+  }
+})
+</script>
+
+</body>
+</html>

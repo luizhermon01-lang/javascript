@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Logo adicionada com uma classe para controle de tamanho -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Pokemon_logo.png" alt="logo-pokémon" class="pokemon-logo">
+    <img src="https://freepngimg.com/save/105788-picture-charizard-download-hq/840x859" alt="charizard-direita"class="poke-lateral direita">
+    <img src="https://www.pngall.com/wp-content/uploads/15/Blastoise-PNG-Images.png" alt="blastoise-esquerda" class="poke-lateral esquerda">
+
+    <div class="container">
+        <h1>Lista de pokémons</h1>
+
+        <div class="top-buttons">
+            <button id="darkMode">Dark Mode</button>
+            <button id="clearAll">Limpar Tudo</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Digite um pokémon">
+            <button id="addBtn">Adicionar</button>
+        </div>
+
+        <p>Total de pokémons: <span id="taskCount">0</span></p>
+
+        <ul id="taskList"></ul>
+    </div>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/mE8E3nT2U70" 
+            title="Pokémon - 1ª Abertura" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <footer>
+
+        <p>&copy; feito por luiz hermon</p>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

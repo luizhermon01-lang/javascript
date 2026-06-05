@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP Moderno</title>
+    <link rel="stylesheet" href="sextacep.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-map-location-dot logo-icon"></i>
+            <h1>Consulte seu CEP</h1>
+            <p>Insira o CEP desejado para obter o endereço completo em tempo real.</p>
+        </header>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="cep" 
+                placeholder="Ex: 01001-000" 
+                maxlength="9"
+                autocomplete="off"
+            >
+            <button id="btn-buscar">
+                <i class="fa-solid fa-magnifying-glass"></i> Buscar
+            </button>
+        </div>
+
+        <div id="error-message" class="error-box hidden"></div>
+
+        <div id="result-container" class="result-card hidden">
+            <div class="result-header">
+                <i class="fa-solid fa-house-chimney"></i>
+                <h2>Endereço Encontrado</h2>
+            </div>
+            
+            <div class="result-grid">
+                <div class="result-item text-full">
+                    <span class="label">Logradouro / Rua</span>
+                    <span class="value" id="rua">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Bairro</span>
+                    <span class="value" id="bairro">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Complemento</span>
+                    <span class="value" id="complemento">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Cidade</span>
+                    <span class="value" id="cidade">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Estado (UF)</span>
+                    <span class="value" id="estado">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">DDD</span>
+                    <span class="value" id="ddd">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Código IBGE</span>
+                    <span class="value" id="ibge">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sextacep.js"></script>
+</body>
+</html>
